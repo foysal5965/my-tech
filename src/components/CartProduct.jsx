@@ -26,7 +26,9 @@ const ProductCart = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <div>
+    <div className="grid   gap-x-8 gap-y-8
+    p-10 w-[70%] h-[h-screen] mx-auto">
+       
       {data?.map((product) => (
        
         <CartTable key={product._id} product={product}></CartTable>
